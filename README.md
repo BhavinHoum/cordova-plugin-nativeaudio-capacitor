@@ -168,32 +168,32 @@ Changes the volume for preloaded complex assets.
 In this example, the resources reside in a relative path under the Cordova root folder "www/".
 
 ```javascript
-if( window.plugins && window.plugins.NativeAudio ) {
+if( cordova.plugins && cordova.plugins.NativeAudio ) {
 	
 	// Preload audio resources
-	window.plugins.NativeAudio.preloadComplex( 'music', 'audio/music.mp3', 1, 1, 0, function(msg){
+	cordova.plugins.NativeAudio.preloadComplex( 'music', 'audio/music.mp3', 1, 1, 0, function(msg){
 	}, function(msg){
 		console.log( 'error: ' + msg );
 	});
 	
-	window.plugins.NativeAudio.preloadSimple( 'click', 'audio/click.mp3', function(msg){
+	cordova.plugins.NativeAudio.preloadSimple( 'click', 'audio/click.mp3', function(msg){
 	}, function(msg){
 		console.log( 'error: ' + msg );
 	});
 
 
 	// Play
-	window.plugins.NativeAudio.play( 'click' );
-	window.plugins.NativeAudio.loop( 'music' );
+	cordova.plugins.NativeAudio.play( 'click' );
+	cordova.plugins.NativeAudio.loop( 'music' );
 
 
 	// Stop multichannel clip after 60 seconds
-	window.setTimeout( function(){
+	cordova.setTimeout( function(){
 
-		window.plugins.NativeAudio.stop( 'music' );
+		cordova.plugins.NativeAudio.stop( 'music' );
 			
-		window.plugins.NativeAudio.unload( 'music' );
-		window.plugins.NativeAudio.unload( 'click' );
+		cordova.plugins.NativeAudio.unload( 'music' );
+		cordova.plugins.NativeAudio.unload( 'click' );
 
 	}, 1000 * 60 );
 }
