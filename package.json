@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-nativeaudio-capacitor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is a copy of https://github.com/floatinghotpot/cordova-plugin-nativeaudio.git with slight modifications to improve packaging with cordova and support for ionic capacitor.  Cordova/PhoneGap Plugin for low latency Native Audio Playback with Capacitor support",
   "cordova": {
     "id": "cordova-plugin-nativeaudio-capacitor",
