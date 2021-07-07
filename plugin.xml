@@ -21,7 +21,7 @@
     <!-- android -->
     <platform name="android">
         <js-module src="www/nativeaudio.js" name="nativeaudio">
-            <clobbers target="window.plugins.NativeAudio"/>
+            <clobbers target="cordova.plugins.NativeAudio"/>
         </js-module>
 
         <config-file target="res/xml/config.xml" parent="/*">
@@ -45,7 +45,7 @@
     <!-- ios -->
     <platform name="ios">
         <js-module src="www/nativeaudio.js" name="nativeaudio">
-            <clobbers target="window.plugins.NativeAudio"/>
+            <clobbers target="cordova.plugins.NativeAudio"/>
         </js-module>
         <config-file target="config.xml" parent="/*">
             <feature name="NativeAudio">
