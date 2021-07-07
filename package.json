@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-nativeaudio-capacitor",
-  "version": "3.0.9",
+  "version": "1.0.0",
   "description": "This is a copy of https://github.com/floatinghotpot/cordova-plugin-nativeaudio.git with slight modifications to improve packaging with cordova and support for ionic capacitor.  Cordova/PhoneGap Plugin for low latency Native Audio Playback with Capacitor support",
   "cordova": {
     "id": "cordova-plugin-nativeaudio-capacitor",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/floatinghotpot/cordova-plugin-nativeaudio.git"
+    "url": "git+https://github.com/floatinghotpot/cordova-plugin-nativeaudio.git"
   },
   "bugs": {
     "url": "https://github.com/floatinghotpot/cordova-plugin-nativeaudio/issues"
@@ -21,20 +21,20 @@
     "ecosystem:cordova",
     "music",
     "audio",
-    "game",
-    "mp3",
-    "rjfun"
+    "mp3"
   ],
-  "author": {
-    "name": "Andrew Trice"
-  },
-  "contributors": [{
-    "name": "Andrew Trice"
-  },{
-    "name": "Raymond Xie",
-    "email": "rjfun.mobile@gmail.com"
-  },{
-    "name": "Sidney Bofah"
-  }],
-  "license": "MIT"
+  "author": "Andrew Trice",
+  "contributors": [
+    "Andrew Trice",
+    "Raymond Xie <rjfun.mobile@gmail.com>",
+    "Sidney Bofah"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/floatinghotpot/cordova-plugin-nativeaudio#readme",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.5"
+    }
+  ]
 }
